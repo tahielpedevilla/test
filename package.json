@@ -1,0 +1,18 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass _resources/main.scss -o assets/styles --output-style compressed && sergey --exclude=_resources",
+    "start": "node server",
+    "dev": "node-sass --watch _resources/main.scss -o assets/styles --output-style compressed & sergey --exclude=_resources --watch"
+  },
+  "author": "Tahiel Pedevilla",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "7.0.3",
+    "node-static": "^0.7.11",
+    "sergey": "0.0.13"
+  }
+}
