@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node-sass _resources/main.scss -o assets/styles --output-style compressed && sergey --exclude=_resources",
     "start": "node server",
-    "dev": "node-sass --watch _resources/main.scss -o assets/styles --output-style compressed & sergey --exclude=_resources --watch"
+    "dev": "node-sass --watch _resources/main.scss -o assets/styles --output-style compressed & sergey --watch"
   },
   "author": "Tahiel Pedevilla",
   "license": "ISC",
