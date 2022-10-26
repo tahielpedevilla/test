@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass _resources/main.scss -o assets/styles --output-style compressed && sergey --exclude=_resources",
+    "build": "sass --style compressed --no-source-map _resources/main.scss:assets/styles/main.css && sergey --exclude=_resources",
     "start": "node server",
-    "dev": "node-sass --watch _resources/main.scss -o assets/styles --output-style compressed & sergey --watch"
+    "dev": "sergey --watch & sass --watch --style compressed --no-source-map _resources/main.scss:assets/styles/main.css"
   },
   "author": "Tahiel Pedevilla",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "7.0.3",
     "node-static": "^0.7.11",
+    "sass": "^1.55.0",
     "sergey": "0.0.13"
   }
 }
