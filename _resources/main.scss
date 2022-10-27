@@ -1,7 +1,6 @@
 /*
   Base
 */
-
 @import "base/_reset";
 @import "base/_mixins";
 @import "base/_variables";
@@ -10,5 +9,7 @@
 /*
   Templates
 */
-
-@import "templates/modulo";
+@import "templates/_global";
+@import "templates/_news-header";
+@import "templates/_news";
+@import "templates/_button-listen";

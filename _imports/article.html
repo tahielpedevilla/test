@@ -1,0 +1,21 @@
+<a href="#">
+  <article class="news">
+    <sergey-slot name="article-image" />
+
+    <div class="news__wrap-texts">
+      <h2 class="news__description">
+        <sergey-slot name="article-title" />
+      </h2>
+      <p class="news__text">
+        <sergey-slot name="article-text" />
+      </p>
+      <div class="news-details">
+        <span>por</span>
+        <span class="news-details__name">Nombre y Apellido</span>
+        <span class="news-details__point"></span>
+        <span>12:23 hs</span>
+      </div>
+      <sergey-slot name="article-optional-button" />
+    </div>
+  </article>
+</a>

@@ -1,0 +1,77 @@
+.news-header {
+  padding-bottom: 23px;
+}
+
+.news-header__title {
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  align-items: center;
+  color: $texto;
+  border-top: solid 6px $color_institucional;
+}
+
+.audio-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.audio-button {
+  height: 30px;
+  background: $color_institucional;
+  border-radius: 100px;
+  border: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.audio-button__text {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.audio-button__add {
+  width: 12px;
+  height: 12px;
+  display: none;
+}
+
+.audio-button__microphone {
+  width: 12.15px;
+  height: 16.63px;
+}
+
+.audio-button--white {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+@media ($breakpoint_mobile) {
+  .news-header {
+    padding-bottom: 1px;
+  }
+
+  .news-header__title {
+    padding: 0 0 10px 0;
+    border-top: unset;
+    border-bottom: solid 6px $color_institucional;
+    font-size: 34px;
+    line-height: 41px;
+  }
+
+  .audio-buttons {
+    padding: 10px 0 0 0;
+  }
+
+  .audio-button__add {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin: 0 3px;
+  }
+}
