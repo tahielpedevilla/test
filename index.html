@@ -1,17 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <title>Módulo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <title>Test Zahira</title>
   </head>
 
   <body>
-    <sergey-import src="modulo">
-      <sergey-template some="hola" />
-    </sergey-import>
-  </body>
+    <section class="main-container">
+      <sergey-import src="news-header" />
 
+      <div class="news-container">
+        <sergey-import src="article">
+          <sergey-template name="article-image">
+            <img
+              class="news__image"
+              src="./assets/img/news_1.jpg"
+              alt="Imagen articulo"
+            />
+          </sergey-template>
+
+          <sergey-template name="article-title">Judiciales</sergey-template>
+
+          <sergey-template name="article-text">Alcalde de Anguía habría ofrecido S/50 mil para "regularizar" firma
+            falsificada en licitación de obra</sergey-template>
+        </sergey-import>
+
+        <sergey-import src="article">
+          <sergey-template name="article-image">
+            <img
+              class="news__image"
+              src="./assets/img/news_2.jpg"
+              alt="Imagen articulo"
+            />
+          </sergey-template>
+
+          <sergey-template name="article-title"> Actualidad </sergey-template>
+
+          <sergey-template name="article-text">¿Cuáles son las interrogantes que persisten sobre la viruela del
+            mono?</sergey-template>
+
+          <sergey-template name="article-optional-button">
+            <sergey-import src="button-listen" />
+          </sergey-template>
+        </sergey-import>
+
+        <sergey-import src="article">
+          <sergey-template name="article-image">
+            <img
+              class="news__image"
+              src="./assets/img/news_3.jpg"
+              alt="Imagen articulo"
+            />
+          </sergey-template>
+
+          <sergey-template name="article-title">Deporte</sergey-template>
+
+          <sergey-template name="article-text">Cristiano Ronaldo descartó jugar en Turquía: "No quiere venir a jugar al Fenerbahce"</sergey-template>
+        </sergey-import>
+      </div>
+    </section>
+  </body>
 </html>

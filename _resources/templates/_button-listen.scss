@@ -1,0 +1,47 @@
+.button-listen {
+  min-width: 144px;
+  height: 35px;
+  color: #ffffff;
+  background: $podcast;
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  gap: 10px;
+  padding: 0 8px 0 8px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 15px;
+  cursor: pointer;
+  .icon-play {
+    fill: #ffffff;
+  }
+}
+
+.button-listen__image-play {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+
+.button-listen__text {
+  font-family: $font_primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.button-listen__point {
+  width: 1.5px;
+  height: 1.5px;
+  background: #fffefe;
+  display: inline-block;
+  margin: auto;
+  position: relative;
+  top: 1px;
+  margin-left: 3.5px;
+  margin-right: 5px;
+}
